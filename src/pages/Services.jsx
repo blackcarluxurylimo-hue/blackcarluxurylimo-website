@@ -1,5 +1,6 @@
 import CTA from '../components/CTA.jsx';
 import Seo from '../components/Seo.jsx';
+import { servicesSeo } from '../data/pageSeo.js';
 import { executiveImages } from '../utils/assets.js';
 import { bookingLinkProps } from '../data/bookingConfig.js';
 
@@ -18,10 +19,7 @@ const checklistRight = [
 export default function Services() {
   return (
     <>
-      <Seo
-        title="NYC Executive Limo Services | Black Car Luxury Limo"
-        description="Premium NYC limousine services for airport transfers, corporate travel, weddings, and private hourly bookings. Professionally licensed chauffeurs and 2025+ black SUVs."
-      />
+      <Seo {...servicesSeo} />
 
       <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
 

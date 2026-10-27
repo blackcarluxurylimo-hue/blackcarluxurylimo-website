@@ -1,0 +1,2 @@
+# Serve prerendered HTML per path (do not rewrite all routes to root index.html).
+/404    /404.html    404

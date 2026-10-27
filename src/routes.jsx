@@ -12,6 +12,9 @@ import Mercedes from './pages/Mercedes.jsx';
 import Escalade from './pages/Escalade.jsx';
 import Lincoln from './pages/Lincoln.jsx';
 import Suburban from './pages/Suburban.jsx';
+import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/BlogPost.jsx';
+import { blogPosts } from './data/blog.js';
 
 export const routeDefinitions = [
   ...ROUTE_PATHS.map((path) => {
@@ -22,6 +25,7 @@ export const routeDefinitions = [
       case '/fleet': element = <Fleet />; break;
       case '/service-areas': element = <ServiceAreas />; break;
       case '/about': element = <About />; break;
+      case '/blog': element = <Blog />; break;
       case '/contact': element = <Contact />; break;
       case '/tesla': element = <Tesla />; break;
       case '/mercedes': element = <Mercedes />; break;
@@ -32,7 +36,11 @@ export const routeDefinitions = [
     }
     return { path, element, prerender: true };
   }),
+  { path: '/blog/:slug', element: <BlogPost /> },
   { path: '*', element: <NotFound />, prerender: false },
 ];
 
-export const prerenderRoutes = ROUTE_PATHS;
+export const prerenderRoutes = [
+  ...ROUTE_PATHS,
+  ...blogPosts.map((post) => `/blog/${post.slug}`),
+];

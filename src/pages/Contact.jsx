@@ -1,5 +1,6 @@
 ﻿import { useState, useRef } from 'react';
 import Seo from '../components/Seo.jsx';
+import { contactSeo } from '../data/pageSeo.js';
 import WhatsAppIcon from '../components/WhatsAppIcon.jsx';
 import LocationAutocomplete from '../components/LocationAutocomplete.jsx';
 import { hearstImages } from '../utils/assets.js';
@@ -86,10 +87,7 @@ export default function Contact() {
 
   return (
     <>
-      <Seo
-        title="Contact & Booking | Black Car Luxury Limo NYC"
-        description="Book your NYC limousine and chauffeur service. Request airport transfers, corporate rides, wedding transportation, and hourly service."
-      />
+      <Seo {...contactSeo} />
 
       <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
         <section className="reveal mx-auto grid w-full max-w-7xl gap-8 lg:grid-cols-2 lg:items-start">

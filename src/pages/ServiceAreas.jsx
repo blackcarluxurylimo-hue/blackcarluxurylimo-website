@@ -1,5 +1,6 @@
 import CTA from '../components/CTA.jsx';
 import Seo from '../components/Seo.jsx';
+import { serviceAreasSeo } from '../data/pageSeo.js';
 
 const popularAreas = [
   'Manhattan',
@@ -29,10 +30,7 @@ const airportTransfers = [
 export default function ServiceAreas() {
   return (
     <>
-      <Seo
-        title="Service Areas | Black Car Luxury Limo NYC"
-        description="Luxury chauffeur and black car service across Manhattan, Brooklyn, Queens, Long Island, Westchester, and the NYC Tri-State area, plus airport transfers to JFK, LGA, EWR, TEB, HPN, ISP, and MMU."
-      />
+      <Seo {...serviceAreasSeo} />
 
       <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
         <section className="reveal mx-auto w-full max-w-7xl">

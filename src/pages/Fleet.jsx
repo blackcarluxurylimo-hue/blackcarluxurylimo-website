@@ -1,15 +1,13 @@
 import CTA from '../components/CTA.jsx';
 import FleetCard from '../components/FleetCard.jsx';
 import Seo from '../components/Seo.jsx';
+import { fleetSeo } from '../data/pageSeo.js';
 import { fleet, pricingGuide } from '../data/fleet.js';
 
 export default function Fleet() {
   return (
     <>
-      <Seo
-        title="Fleet | Black Car Luxury Limo NYC"
-        description="Browse our premium limousine fleet including Cadillac Escalade, Mercedes S-Class, Suburban, and executive Sprinter van."
-      />
+      <Seo {...fleetSeo} />
 
       <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
         <section className="reveal mx-auto w-full max-w-7xl">

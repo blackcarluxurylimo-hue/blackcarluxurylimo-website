@@ -16,12 +16,14 @@ const PUBLIC_ROBOTS_PATH = path.join('./public', 'robots.txt');
 
 // --- Static route extraction from src/routes.jsx ---
 import { ROUTE_PATHS } from '../src/routes-list.js';
+import { blogPosts } from '../src/data/blog.js';
 
 // Priority logic: homepage highest, others medium, lowest for less important
 function getPriority(path) {
   if (path === '/') return 1.0;
   if (['/services', '/fleet', '/service-areas'].includes(path)) return 0.8;
-  if (['/about', '/contact'].includes(path)) return 0.7;
+  if (['/about', '/contact', '/blog'].includes(path)) return 0.7;
+  if (path.startsWith('/blog/')) return 0.6;
   return 0.6;
 }
 
@@ -36,10 +38,6 @@ function getChangefreq(path) {
 // Exclude non-indexable routes (404, admin, etc.)
 const EXCLUDE_ROUTES = ['*', '/notfound', '/admin'];
 
-// --- Blog posts: If you have a blog, import your data here ---
-// Example:
-// import { BLOG_POSTS } from '../src/data/blog.js';
-const BLOG_POSTS = [];
 
 // --- Image support: If you want to add images, add an 'images' array to your route or blog post objects ---
 
@@ -55,18 +53,14 @@ function getSitemapEntries() {
       lastmod: today,
     }));
 
-  // Blog posts (none in this project, see example below)
-  // const blogEntries = BLOG_POSTS.map(post => ({
-  //   url: `/blog/${post.slug}`,
-  //   changefreq: 'monthly',
-  //   priority: 0.6,
-  //   lastmod: post.date || today,
-  //   ...(post.images && post.images.length > 0 ? {
-  //     img: post.images.map(src => ({ url: BASE_URL + src }))
-  //   } : {})
-  // }));
+  const blogEntries = blogPosts.map((post) => ({
+    url: `/blog/${post.slug}`,
+    changefreq: 'monthly',
+    priority: 0.6,
+    lastmod: post.date || today,
+  }));
 
-  return [...staticEntries /*, ...blogEntries */];
+  return [...staticEntries, ...blogEntries];
 }
 
 // Main sitemap generation

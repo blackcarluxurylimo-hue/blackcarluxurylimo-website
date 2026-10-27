@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { hearstImages } from '../utils/assets';
 import Seo from '../components/Seo';
 import FleetDetailsCarousel from '../components/FleetDetailsCarousel';
+import { mercedesSeo } from '../data/pageSeo.js';
 
 const MercedesPage = () => {
   const vehicles = [
@@ -38,7 +39,7 @@ const MercedesPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ink to-ink/95">
-      <Seo title="Mercedes-Benz Fleet - Premium Luxury Lineup | Black Car Luxury Limo" description="Discover our Mercedes-Benz lineup featuring GLS, GLE, G-Class, and EQS SUV models for premium executive travel." />
+      <Seo {...mercedesSeo} />
       <div className="pt-[9rem] pb-16 px-4 max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 text-center">Mercedes-Benz</h1>
         <p className="text-gold text-center text-sm md:text-base mb-12">Complete Luxury SUV Lineup</p>

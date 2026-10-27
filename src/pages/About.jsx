@@ -1,6 +1,7 @@
 import { bookingLinkProps } from '../data/bookingConfig.js';
 import CTA from '../components/CTA.jsx';
 import Seo from '../components/Seo.jsx';
+import { aboutSeo } from '../data/pageSeo.js';
 import { executiveImages } from '../utils/assets.js';
 
 const values = [
@@ -21,10 +22,7 @@ const values = [
 export default function About() {
   return (
     <>
-      <Seo
-        title="About Us | Black Car Luxury Limo NYC"
-        description="Black Car Luxury Limo is a New York chauffeur service built on punctuality, discretion, and an immaculate 2025+ black fleet for executive, airport, and VIP travel."
-      />
+      <Seo {...aboutSeo} />
 
       <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
         <section className="reveal mx-auto w-full max-w-7xl">

@@ -6,6 +6,7 @@ export const ROUTE_PATHS = [
   '/fleet',
   '/service-areas',
   '/about',
+  '/blog',
   '/contact',
   '/tesla',
   '/mercedes',

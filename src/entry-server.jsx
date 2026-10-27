@@ -10,7 +10,12 @@ export function render(url) {
 
   const seoContextValue = {
     setSeo(nextSeo) {
-      seo = nextSeo;
+      seo = {
+        ...defaultSeo,
+        ...nextSeo,
+        og: nextSeo.og ?? defaultSeo.og,
+        twitter: nextSeo.twitter ?? defaultSeo.twitter,
+      };
     },
   };
 

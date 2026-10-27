@@ -1,6 +1,7 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero.jsx';
 import Seo from '../components/Seo.jsx';
+import { homeSeo } from '../data/pageSeo.js';
 import FleetCard from '../components/FleetCard.jsx';
 import { fleet } from '../data/fleet.js';
 import { assetUrl } from '../utils/assets.js';
@@ -49,10 +50,7 @@ const popularAirportCodes = ['JFK', 'LGA', 'EWR', 'TEB', 'HPN', 'ISP', 'MMU'];
 export default function Home() {
   return (
     <>
-      <Seo
-        title="Black Car Luxury Limo | Luxury Chauffeur Service NYC"
-        description="Premium NYC limousine and chauffeur service for airport transfers, executive rides, weddings, and VIP transportation."
-      />
+      <Seo {...homeSeo} />
 
       <header>
         <Hero />

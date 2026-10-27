@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { hearstImages } from '../utils/assets';
 import Seo from '../components/Seo';
 import FleetDetailsCarousel from '../components/FleetDetailsCarousel';
+import { escaladeSeo } from '../data/pageSeo.js';
 
 const EscaladePage = () => {
   const vehicles = [
@@ -38,7 +39,7 @@ const EscaladePage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ink to-ink/95">
-      <Seo title="Cadillac Escalade Lineup - Luxury SUV Fleet | Black Car Luxury Limo" description="Explore our Cadillac Escalade lineup including Escalade, ESV, Escalade-V, and Escalade IQ/IQL for premium chauffeur service." />
+      <Seo {...escaladeSeo} />
       <div className="pt-[9rem] pb-16 px-4 max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 text-center">Cadillac Escalade</h1>
         <p className="text-gold text-center text-sm md:text-base mb-12">Escalade Lineup</p>

@@ -5,9 +5,6 @@ const LINKS = {
   fleet: '/fleet',
   serviceAreas: '/service-areas',
   booking: 'https://book.mylimobiz.com/v4/blackcarluxury',
-  portAuthorityAirtrain:
-    'https://www.portauthoritybuilds.com/redevelopment/us/en/ewr/news/port-authority-advances--3-5-billion-airtrain-newark-replacement.html',
-  mtaCongestion: 'https://www.mta.info/fares-tolls/tolls/congestion-relief-zone/taxi-fhv-tolls',
 };
 
 export const blogPosts = [
@@ -85,19 +82,8 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        parts: [
-          {
-            type: 'text',
-            value:
-              'Because Newark is changing. The airport served 47 million passengers in 2025, its third-busiest year, and the Port Authority is replacing its AirTrain in a ',
-          },
-          { type: 'link', text: 'multi-year project', href: LINKS.portAuthorityAirtrain },
-          {
-            type: 'text',
-            value:
-              ' targeting 2030. Weekday shuttle buses have already replaced part of the train link, and more outages are expected in 2027 and 2028.',
-          },
-        ],
+        text:
+          'Because Newark is changing. The airport served 47 million passengers in 2025, its third-busiest year, and the Port Authority is replacing its AirTrain in a multi-year project targeting 2030. Weekday shuttle buses have already replaced part of the train link, and more outages are expected in 2027 and 2028.',
       },
       {
         type: 'p',
@@ -120,19 +106,8 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        parts: [
-          {
-            type: 'text',
-            value:
-              'One item you should expect on trips touching Manhattan below 60th Street is the congestion pricing charge. The ',
-          },
-          { type: 'link', text: 'MTA', href: LINKS.mtaCongestion },
-          {
-            type: 'text',
-            value:
-              ' states that enrolled for-hire vehicle bases collect a per-trip charge from passengers, 75 cents for most black car bases and $1.50 for high-volume app services. Ask your dispatcher how it appears on your receipt.',
-          },
-        ],
+        text:
+          'One item you should expect on trips touching Manhattan below 60th Street is the congestion pricing charge. The MTA states that enrolled for-hire vehicle bases collect a per-trip charge from passengers, 75 cents for most black car bases and $1.50 for high-volume app services. Ask your dispatcher how it appears on your receipt.',
       },
       {
         type: 'p',

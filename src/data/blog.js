@@ -1,5 +1,15 @@
 const blogImage = (fileName) => `/assets/${fileName}`;
 
+const LINKS = {
+  home: 'https://www.blackcarluxurylimo.com/',
+  fleet: '/fleet',
+  serviceAreas: '/service-areas',
+  booking: 'https://book.mylimobiz.com/v4/blackcarluxury',
+  portAuthorityAirtrain:
+    'https://www.portauthoritybuilds.com/redevelopment/us/en/ewr/news/port-authority-advances--3-5-billion-airtrain-newark-replacement.html',
+  mtaCongestion: 'https://www.mta.info/fares-tolls/tolls/congestion-relief-zone/taxi-fhv-tolls',
+};
+
 export const blogPosts = [
   {
     slug: 'nyc-chauffeur-service-what-great-ride-includes',
@@ -16,8 +26,15 @@ export const blogPosts = [
     blocks: [
       {
         type: 'p',
-        text:
-          'Hire an NYC chauffeur service once and you start noticing everything else that goes wrong with getting around the city. The late pickups. The mystery fees. The driver who cannot find the entrance of your hotel. A proper chauffeur ride fixes those problems, but only if you know what to ask for before the car arrives.',
+        parts: [
+          { type: 'text', value: 'Hire an ' },
+          { type: 'link', text: 'NYC chauffeur service', href: LINKS.home },
+          {
+            type: 'text',
+            value:
+              ' once and you start noticing everything else that goes wrong with getting around the city. The late pickups. The mystery fees. The driver who cannot find the entrance of your hotel. A proper chauffeur ride fixes those problems, but only if you know what to ask for before the car arrives.',
+          },
+        ],
       },
       {
         type: 'p',
@@ -68,8 +85,19 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text:
-          'Because Newark is changing. The airport served 47 million passengers in 2025, its third-busiest year, and the Port Authority is replacing its AirTrain in a multi-year project targeting 2030. Weekday shuttle buses have already replaced part of the train link, and more outages are expected in 2027 and 2028.',
+        parts: [
+          {
+            type: 'text',
+            value:
+              'Because Newark is changing. The airport served 47 million passengers in 2025, its third-busiest year, and the Port Authority is replacing its AirTrain in a ',
+          },
+          { type: 'link', text: 'multi-year project', href: LINKS.portAuthorityAirtrain },
+          {
+            type: 'text',
+            value:
+              ' targeting 2030. Weekday shuttle buses have already replaced part of the train link, and more outages are expected in 2027 and 2028.',
+          },
+        ],
       },
       {
         type: 'p',
@@ -92,8 +120,19 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text:
-          'One item you should expect on trips touching Manhattan below 60th Street is the congestion pricing charge. The MTA states that enrolled for-hire vehicle bases collect a per-trip charge from passengers, 75 cents for most black car bases and $1.50 for high-volume app services. Ask your dispatcher how it appears on your receipt.',
+        parts: [
+          {
+            type: 'text',
+            value:
+              'One item you should expect on trips touching Manhattan below 60th Street is the congestion pricing charge. The ',
+          },
+          { type: 'link', text: 'MTA', href: LINKS.mtaCongestion },
+          {
+            type: 'text',
+            value:
+              ' states that enrolled for-hire vehicle bases collect a per-trip charge from passengers, 75 cents for most black car bases and $1.50 for high-volume app services. Ask your dispatcher how it appears on your receipt.',
+          },
+        ],
       },
       {
         type: 'p',
@@ -105,8 +144,19 @@ export const blogPosts = [
       },
       {
         type: 'p',
-        text:
-          'Think of Black Car Luxury Limo as the part of your schedule you stop worrying about. Pick the booking type, choose the SUV that suits your group, give the dispatcher your flight number and ride in a quiet cabin. You can explore the fleet, review service areas, call (718) 414-3881 or reserve online.',
+        parts: [
+          {
+            type: 'text',
+            value:
+              'Think of Black Car Luxury Limo as the part of your schedule you stop worrying about. Pick the booking type, choose the SUV that suits your group, give the dispatcher your flight number and ride in a quiet cabin. You can explore the ',
+          },
+          { type: 'link', text: 'fleet', href: LINKS.fleet },
+          { type: 'text', value: ', review ' },
+          { type: 'link', text: 'service areas', href: LINKS.serviceAreas },
+          { type: 'text', value: ', call (718) 414-3881 or ' },
+          { type: 'link', text: 'reserve online', href: LINKS.booking },
+          { type: 'text', value: '.' },
+        ],
       },
       {
         type: 'h2',

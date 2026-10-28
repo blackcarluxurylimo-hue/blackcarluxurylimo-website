@@ -5,6 +5,52 @@ import NotFound from './NotFound.jsx';
 import { getBlogPostSeo } from '../data/pageSeo.js';
 import { formatBlogDate, getPostBySlug } from '../data/blog.js';
 
+function BlogLink({ href, children }) {
+  const className =
+    'font-medium text-goldSoft underline decoration-gold/40 underline-offset-2 transition hover:text-gold';
+
+  let internalTo = null;
+  if (href.startsWith('/') && !href.startsWith('//')) {
+    internalTo = href;
+  } else {
+    try {
+      const url = new URL(href);
+      if (url.hostname.replace(/^www\./, '') === 'blackcarluxurylimo.com') {
+        internalTo = url.pathname || '/';
+      }
+    } catch {
+      internalTo = null;
+    }
+  }
+
+  if (internalTo) {
+    return (
+      <Link to={internalTo} className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      {children}
+    </a>
+  );
+}
+
+function InlineContent({ parts }) {
+  return parts.map((part, index) => {
+    if (part.type === 'link') {
+      return (
+        <BlogLink key={index} href={part.href}>
+          {part.text}
+        </BlogLink>
+      );
+    }
+    return <span key={index}>{part.value}</span>;
+  });
+}
+
 function ArticleBody({ blocks }) {
   return (
     <div className="space-y-5 text-base leading-relaxed text-white/80">
@@ -30,6 +76,13 @@ function ArticleBody({ blocks }) {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+          );
+        }
+        if (block.parts) {
+          return (
+            <p key={index}>
+              <InlineContent parts={block.parts} />
+            </p>
           );
         }
         return <p key={index}>{block.text}</p>;

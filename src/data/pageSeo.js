@@ -32,14 +32,14 @@ export function buildPageSeo({ path, title, description, ogTitle, ogDescription,
 
 export const homeSeo = buildPageSeo({
   path: '/',
-  title: 'Black Car Luxury Limo | Luxury Chauffeur Service NYC',
+  title: 'Professional Chauffeur Service NYC | Black Car Luxury Limo',
   description:
-    'Premium NYC limousine and chauffeur service for airport transfers, executive rides, weddings, and VIP transportation.',
-  ogTitle: 'Black Car Luxury Limo | Luxury Chauffeur Service',
+    'Book airport car service near you with Black Car Luxury Limo. Enjoy NYC airport transfers, private black car service and professional chauffeur service across NYC.',
+  ogTitle: 'Professional Chauffeur Service NYC | Black Car Luxury Limo',
   ogDescription:
-    'Travel in comfort and style with Black Car Luxury Limo. Explore our luxury fleet and professional chauffeur services.',
+    'Book airport car service near you with Black Car Luxury Limo. Enjoy NYC airport transfers, private black car service and professional chauffeur service across NYC.',
   twitterDescription:
-    'Travel in comfort and style with Black Car Luxury Limo. Explore our luxury fleet and professional chauffeur services.',
+    'Book airport car service near you with Black Car Luxury Limo. Enjoy NYC airport transfers, private black car service and professional chauffeur service across NYC.',
   image: '/assets/mercedes-gls.jpg',
 });
 
@@ -57,35 +57,40 @@ export const aboutSeo = buildPageSeo({
 
 export const serviceAreasSeo = buildPageSeo({
   path: '/service-areas',
-  title: 'Service Areas | Black Car Luxury Limo NYC',
+  title: 'Luxury Chauffeur Service in NYC Area | Black Car Luxury Limo NYC',
   description:
-    'Luxury chauffeur and black car service across Manhattan, Brooklyn, Queens, Long Island, Westchester, and the NYC Tri-State area, plus airport transfers to JFK, LGA, EWR, TEB, HPN, ISP, and MMU.',
-  ogTitle: 'Luxury Transportation Service Areas | Black Car Luxury Limo',
+    'Black car service across Manhattan, Brooklyn, Queens, Long Island, Westchester, and NYC, plus airport transfers to JFK, LGA, EWR, TEB, HPN, ISP, and MMU.',
+  ogTitle: 'Luxury Chauffeur Service in NYC Area | Black Car Luxury Limo NYC',
   ogDescription:
-    'Explore Black Car Luxury Limo service areas and find luxury transportation options for your travel needs.',
-  twitterDescription: 'Explore our service areas and luxury transportation options.',
+    'Black car service across Manhattan, Brooklyn, Queens, Long Island, Westchester, and NYC, plus airport transfers to JFK, LGA, EWR, TEB, HPN, ISP, and MMU.',
+  twitterDescription:
+    'Black car service across Manhattan, Brooklyn, Queens, Long Island, Westchester, and NYC, plus airport transfers to JFK, LGA, EWR, TEB, HPN, ISP, and MMU.',
   image: '/assets/mercedes-gls.jpg',
 });
 
 export const fleetSeo = buildPageSeo({
   path: '/fleet',
-  title: 'Fleet | Black Car Luxury Limo NYC',
+  title: 'Charter Bus Rental Service in NYC | Black Car Luxury Limo',
   description:
-    'Browse our premium limousine fleet including Cadillac Escalade, Mercedes S-Class, Suburban, and executive Sprinter van.',
-  ogTitle: 'Luxury Vehicle Fleet | Black Car Luxury Limo',
-  ogDescription: 'Discover our luxury vehicle fleet and explore premium transportation options for your journey.',
-  twitterDescription: 'Explore the luxury vehicles available through Black Car Luxury Limo.',
+    'Book charter bus rental in NYC with reliable charter bus services for group travel, corporate events, airport transfers and special occasions with comfort.',
+  ogTitle: 'Charter Bus Rental Service in NYC | Black Car Luxury Limo',
+  ogDescription:
+    'Book charter bus rental in NYC with reliable charter bus services for group travel, corporate events, airport transfers and special occasions with comfort.',
+  twitterDescription:
+    'Book charter bus rental in NYC with reliable charter bus services for group travel, corporate events, airport transfers and special occasions with comfort.',
   image: '/assets/chevy-suburban-2026.png',
 });
 
 export const servicesSeo = buildPageSeo({
   path: '/services',
-  title: 'NYC Executive Limo Services | Black Car Luxury Limo',
+  title: 'Corporate Black Car Chauffeur Service in NYC | Black Car Luxury Limo',
   description:
-    'Premium NYC limousine services for airport transfers, corporate travel, weddings, and private hourly bookings. Professionally licensed chauffeurs and 2025+ black SUVs.',
-  ogTitle: 'Luxury Chauffeur Services | Black Car Luxury Limo',
-  ogDescription: 'Explore luxury chauffeur and private transportation services from Black Car Luxury Limo.',
-  twitterDescription: 'Explore private transportation and luxury chauffeur services.',
+    'Book black car chauffeur service with us. Enjoy corporate car service in NYC, executive transportation and professional chauffeur services for business travel.',
+  ogTitle: 'Corporate Black Car Chauffeur Service in NYC | Black Car Luxury Limo',
+  ogDescription:
+    'Book black car chauffeur service with us. Enjoy corporate car service in NYC, executive transportation and professional chauffeur services for business travel.',
+  twitterDescription:
+    'Book black car chauffeur service with us. Enjoy corporate car service in NYC, executive transportation and professional chauffeur services for business travel.',
   image: '/assets/corporate-pitch.jpg',
 });
 
@@ -93,10 +98,12 @@ export const mercedesSeo = buildPageSeo({
   path: '/mercedes',
   title: 'Mercedes-Benz Fleet - Premium Luxury Lineup | Black Car Luxury Limo',
   description:
-    'Discover our Mercedes-Benz lineup featuring GLS, GLE, G-Class, and EQS SUV models for premium executive travel.',
-  ogTitle: 'Mercedes Luxury Transportation | Black Car Luxury Limo',
-  ogDescription: 'Explore Mercedes vehicles in our fleet and discover a premium transportation option.',
-  twitterDescription: 'Discover Mercedes luxury transportation options with Black Car Luxury Limo.',
+    'Discover our Mercedes-Benz lineup featuring GLS, GLE, G-Class, and EQS SUV models for premium executive travel. Visit our website to book hassle-free travel.',
+  ogTitle: 'Mercedes-Benz Fleet - Premium Luxury Lineup | Black Car Luxury Limo',
+  ogDescription:
+    'Discover our Mercedes-Benz lineup featuring GLS, GLE, G-Class, and EQS SUV models for premium executive travel. Visit our website to book hassle-free travel.',
+  twitterDescription:
+    'Discover our Mercedes-Benz lineup featuring GLS, GLE, G-Class, and EQS SUV models for premium executive travel. Visit our website to book hassle-free travel.',
   image: '/assets/mercedes-gls.jpg',
 });
 
@@ -104,33 +111,38 @@ export const escaladeSeo = buildPageSeo({
   path: '/escalade',
   title: 'Cadillac Escalade Lineup - Luxury SUV Fleet | Black Car Luxury Limo',
   description:
-    'Explore our Cadillac Escalade lineup including Escalade, ESV, Escalade-V, and Escalade IQ/IQL for premium chauffeur service.',
-  ogTitle: 'Cadillac Escalade Luxury Transport | Black Car Luxury Limo',
-  ogDescription: 'Explore the Cadillac Escalade and discover a spacious, premium transportation option.',
-  twitterDescription: 'Explore Cadillac Escalade luxury transportation with Black Car Luxury Limo.',
+    'Explore our Cadillac Escalade lineup including Escalade, ESV, Escalade-V, and Escalade IQ/IQL for premium chauffeur service. Visit our website today.',
+  ogTitle: 'Cadillac Escalade Lineup - Luxury SUV Fleet | Black Car Luxury Limo',
+  ogDescription:
+    'Explore our Cadillac Escalade lineup including Escalade, ESV, Escalade-V, and Escalade IQ/IQL for premium chauffeur service. Visit our website today.',
+  twitterDescription:
+    'Explore our Cadillac Escalade lineup including Escalade, ESV, Escalade-V, and Escalade IQ/IQL for premium chauffeur service. Visit our website today.',
   image: '/assets/cadillac-escalade.jpg',
 });
 
 export const lincolnSeo = buildPageSeo({
   path: '/lincoln',
-  title: 'Lincoln SUV Lineup - Navigator, Aviator, Nautilus | Black Car Luxury Limo',
+  title: 'Lincoln SUV Lineup - Navigator & Nautilus | Black Car Luxury Limo',
   description:
-    'Explore our Lincoln SUV lineup including Navigator, Navigator L, Aviator, and Nautilus for premium chauffeur service.',
-  ogTitle: 'Lincoln Luxury Transportation | Black Car Luxury Limo',
-  ogDescription: 'Discover Lincoln vehicles in our fleet and explore comfortable private transportation.',
-  twitterDescription: 'Explore Lincoln luxury transportation options with Black Car Luxury Limo.',
+    'Explore our Lincoln SUV lineup including Navigator, Navigator L, Aviator, and Nautilus for premium chauffeur service. Visit our website today to book now.',
+  ogTitle: 'Lincoln SUV Lineup - Navigator & Nautilus | Black Car Luxury Limo',
+  ogDescription:
+    'Explore our Lincoln SUV lineup including Navigator, Navigator L, Aviator, and Nautilus for premium chauffeur service. Visit our website today to book now.',
+  twitterDescription:
+    'Explore our Lincoln SUV lineup including Navigator, Navigator L, Aviator, and Nautilus for premium chauffeur service. Visit our website today to book now.',
   image: '/assets/lincoln-navigator.jpg',
 });
 
 export const contactSeo = buildPageSeo({
   path: '/contact',
-  title: 'Contact & Booking | Black Car Luxury Limo NYC',
+  title: 'Contact Us | Airport Black Car Service in NYC',
   description:
-    'Book your NYC limousine and chauffeur service. Request airport transfers, corporate rides, wedding transportation, and hourly service.',
-  ogTitle: 'Contact Black Car Luxury Limo | Get in Touch',
+    'Book airport car service in NYC with Black Car Luxury Limo. Enjoy premium black car service, luxury transportation and reliable car service throughout New York City.',
+  ogTitle: 'Contact Us | Airport Black Car Service in NYC',
   ogDescription:
-    'Get in touch with Black Car Luxury Limo about luxury transportation and private travel requirements.',
-  twitterDescription: 'Contact us about luxury transportation and private travel options.',
+    'Book airport car service in NYC with Black Car Luxury Limo. Enjoy premium black car service, luxury transportation and reliable car service throughout New York City.',
+  twitterDescription:
+    'Book airport car service in NYC with Black Car Luxury Limo. Enjoy premium black car service, luxury transportation and reliable car service throughout New York City.',
   image: '/assets/book-your-ride-escalade.webp',
 });
 
@@ -138,10 +150,12 @@ export const suburbanSeo = buildPageSeo({
   path: '/suburban',
   title: 'Chevrolet Suburban - Full-Size Luxury SUV | Black Car Luxury Limo',
   description:
-    'Experience spacious luxury with our Chevrolet Suburban fleet. Perfect for large groups and extended journeys.',
-  ogTitle: 'Chevrolet Suburban Luxury Transport | Black Car Luxury Limo',
-  ogDescription: 'Explore the Chevrolet Suburban and discover a spacious private transportation option.',
-  twitterDescription: 'Discover Chevrolet Suburban luxury transportation with Black Car Luxury Limo.',
+    'Experience spacious luxury with our Chevrolet Suburban fleet. Perfect for large groups and extended journeys. Visit our website today to book your fleet now.',
+  ogTitle: 'Chevrolet Suburban - Full-Size Luxury SUV | Black Car Luxury Limo',
+  ogDescription:
+    'Experience spacious luxury with our Chevrolet Suburban fleet. Perfect for large groups and extended journeys. Visit our website today to book your fleet now.',
+  twitterDescription:
+    'Experience spacious luxury with our Chevrolet Suburban fleet. Perfect for large groups and extended journeys. Visit our website today to book your fleet now.',
   image: '/assets/chevrolet-suburban.jpg',
 });
 
@@ -149,22 +163,38 @@ export const teslaSeo = buildPageSeo({
   path: '/tesla',
   title: 'Tesla Fleet - Luxury Electric Lineup | Black Car Luxury Limo',
   description:
-    'Explore our premium Tesla lineup including Model X, Model S, Model 3, Model Y, and Cybertruck for executive electric travel.',
-  ogTitle: 'Tesla Luxury Transportation | Black Car Luxury Limo',
-  ogDescription: 'Explore Tesla transportation options and discover a modern vehicle choice for your journey.',
-  twitterDescription: 'Explore Tesla luxury transportation options with Black Car Luxury Limo.',
+    'Explore our premium Tesla lineup including Model X, Model S, Model 3, Model Y, and Cybertruck for executive electric travel. Visit our website today to book.',
+  ogTitle: 'Tesla Fleet - Luxury Electric Lineup | Black Car Luxury Limo',
+  ogDescription:
+    'Explore our premium Tesla lineup including Model X, Model S, Model 3, Model Y, and Cybertruck for executive electric travel. Visit our website today to book.',
+  twitterDescription:
+    'Explore our premium Tesla lineup including Model X, Model S, Model 3, Model Y, and Cybertruck for executive electric travel. Visit our website today to book.',
   image: '/assets/tesla-model-x.jpg',
+});
+
+export const lucidSeo = buildPageSeo({
+  path: '/lucid',
+  title: 'Lucid Fleet - Premium Luxury Lineup | Black Car Luxury Limo',
+  description:
+    'Black Car Luxury Limo provides premium Lucid NYC chauffeur and limousine transportation for airport, corporate, and private travel. Visit our website today.',
+  ogTitle: 'Lucid Fleet - Premium Luxury Lineup | Black Car Luxury Limo',
+  ogDescription:
+    'Black Car Luxury Limo provides premium Lucid NYC chauffeur and limousine transportation for airport, corporate, and private travel. Visit our website today.',
+  twitterDescription:
+    'Black Car Luxury Limo provides premium Lucid NYC chauffeur and limousine transportation for airport, corporate, and private travel. Visit our website today.',
+  image: '/assets/mercedes-gls.jpg',
 });
 
 export const blogListingSeo = buildPageSeo({
   path: '/blog',
-  title: 'Blog | Black Car Luxury Limo NYC',
+  title: 'NYC Luxury Car Service Blog | Black Car Luxury Limo',
   description:
-    'Luxury travel insights, airport transfer tips, and NYC chauffeur advice from Black Car Luxury Limo.',
-  ogTitle: 'Luxury Travel Insights | Black Car Luxury Limo',
+    'Explore our Black Car Luxury Limo blog for NYC airport car service tips, luxury transportation insights, chauffeur service guides, and travel advice.',
+  ogTitle: 'NYC Luxury Car Service Blog | Black Car Luxury Limo',
   ogDescription:
-    'Read guides on airport transfers, corporate travel, weddings, and private car service in New York City.',
-  twitterDescription: 'NYC chauffeur and luxury transportation tips from Black Car Luxury Limo.',
+    'Explore our Black Car Luxury Limo blog for NYC airport car service tips, luxury transportation insights, chauffeur service guides, and travel advice.',
+  twitterDescription:
+    'Explore our Black Car Luxury Limo blog for NYC airport car service tips, luxury transportation insights, chauffeur service guides, and travel advice.',
   image: '/assets/mercedes-gls.jpg',
 });
 
@@ -202,6 +232,7 @@ export const routeSeoMap = {
   '/lincoln': lincolnSeo,
   '/suburban': suburbanSeo,
   '/tesla': teslaSeo,
+  '/lucid': lucidSeo,
   '/blog': blogListingSeo,
   ...blogPostSeoMap,
 };

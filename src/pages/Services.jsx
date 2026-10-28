@@ -28,9 +28,9 @@ export default function Services() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-goldSoft">Corporate &amp; Executive Travel</p>
-              <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">
+              <h1 className="mt-2 text-3xl font-bold text-white md:text-4xl">
                 Travel in Style With Corporate Limousine Service in NYC
-              </h2>
+              </h1>
               <p className="mt-4 text-white/80">
                 In the corporate world, first impressions are everything. Arriving in a professionally driven, immaculate black SUV signals authority, precision, and respect for your own time — and for the people you are meeting.
               </p>

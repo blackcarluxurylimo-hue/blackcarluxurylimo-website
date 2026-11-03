@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { socialLinks, socialIconPaths } from '../data/socialLinks.js';
 import { bookingLinkProps } from '../data/bookingConfig.js';
@@ -26,7 +26,6 @@ function SocialIcon({ name }) {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const headerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,27 +40,13 @@ export default function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    const updateNavbarHeight = () => {
-      const height = headerRef.current?.offsetHeight ?? 0;
-      document.documentElement.style.setProperty('--navbar-height', `${height}px`);
-    };
-
-    updateNavbarHeight();
-    window.addEventListener('resize', updateNavbarHeight);
-
-    return () => {
-      window.removeEventListener('resize', updateNavbarHeight);
-    };
-  }, [scrolled, open]);
-
   const navLinkClass = ({ isActive }) =>
     `text-lg tracking-wide transition-colors ${
       isActive ? 'text-gold' : 'text-white/85 hover:text-goldSoft'
     }`;
 
   return (
-    <header ref={headerRef} className={`site-navbar fixed left-0 right-0 top-0 z-[100] border-b border-gold/20 bg-black transition-all duration-300 ${
+    <header className={`site-navbar left-0 right-0 top-0 z-[100] border-b border-gold/20 bg-black transition-all duration-300 ${
       scrolled ? 'shadow-[0_6px_24px_rgba(0,0,0,0.35)]' : ''
     }`}>
       {/* Top utility bar: social (left) · contact + Book Now (right) */}
@@ -172,7 +157,7 @@ export default function Navbar() {
       }`}>
         <Link to="/" className="flex items-center gap-2" aria-label="Black Car Luxury Limo Home" onClick={() => setOpen(false)}>
           <span
-            className="navbar-logo-shine shrink-0 h-24"
+            className="navbar-logo-shine h-14 shrink-0 sm:h-20 lg:h-24"
             aria-hidden="true"
           >
             <img

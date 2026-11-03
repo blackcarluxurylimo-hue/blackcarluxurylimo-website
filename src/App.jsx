@@ -16,7 +16,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-charcoal pt-[var(--navbar-height,76px)] pb-[calc(4.25rem+env(safe-area-inset-bottom))] text-white md:pb-0">
+    <div className="min-h-screen overflow-x-hidden bg-charcoal pb-[calc(4.25rem+env(safe-area-inset-bottom))] text-white md:pb-0">
       <Navbar />
       <Routes>
         {routeDefinitions.map((route) => (

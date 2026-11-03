@@ -48,6 +48,12 @@ async function prerender() {
     await mkdir(routeDir, { recursive: true });
     await writeFile(path.join(routeDir, 'index.html'), html, 'utf8');
   }
+
+  // Hosts (Vercel, Netlify, etc.) serve this with HTTP 404 when no static file matches.
+  const notFoundUrl = '/__404_prerender__';
+  const { appHtml: notFoundHtml, seo: notFoundSeo } = render(notFoundUrl);
+  const notFoundDocument = injectHtml(template, notFoundHtml, notFoundSeo);
+  await writeFile(path.join(distDir, '404.html'), notFoundDocument, 'utf8');
 }
 
 async function main() {

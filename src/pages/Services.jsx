@@ -21,10 +21,10 @@ export default function Services() {
     <>
       <Seo {...servicesSeo} />
 
-      <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+      <main className="px-4 pt-6 pb-10 md:px-6 md:pt-8 md:pb-14">
 
         {/* Corporate pitch — two column */}
-        <section className="reveal mx-auto mt-14 w-full max-w-7xl">
+        <section className="reveal mx-auto mt-0 w-full max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-goldSoft">Corporate &amp; Executive Travel</p>

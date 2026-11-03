@@ -24,7 +24,7 @@ export default function About() {
     <>
       <Seo {...aboutSeo} />
 
-      <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+      <main className="px-4 pt-6 pb-10 md:px-6 md:pt-8 md:pb-14">
         <section className="reveal mx-auto w-full max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>

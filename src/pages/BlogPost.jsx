@@ -103,7 +103,7 @@ export default function BlogPost() {
     <>
       <Seo {...getBlogPostSeo(post)} />
 
-      <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+      <main className="px-4 pt-6 pb-10 md:px-6 md:pt-8 md:pb-14">
         <article className="reveal mx-auto w-full max-w-3xl">
           <Link
             to="/blog"

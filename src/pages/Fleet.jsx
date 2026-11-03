@@ -9,7 +9,7 @@ export default function Fleet() {
     <>
       <Seo {...fleetSeo} />
 
-      <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+      <main className="px-4 pt-6 pb-10 md:px-6 md:pt-8 md:pb-14">
         <section className="reveal mx-auto w-full max-w-7xl">
           <h1 className="text-4xl font-bold text-white md:text-5xl">Our Luxury Fleet</h1>
           <p className="mt-4 max-w-3xl text-white/80">

@@ -1,2 +1,3 @@
-# Serve prerendered HTML per path (do not rewrite all routes to root index.html).
+# Prerendered routes are static files first; unknown paths use custom 404.html.
 /404    /404.html    404
+/*      /404.html    404

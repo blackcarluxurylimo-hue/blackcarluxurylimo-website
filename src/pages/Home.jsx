@@ -57,7 +57,7 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="reveal px-4 py-12 md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+        <section className="reveal px-4 py-12 md:px-6 md:py-16">
           <div className="mx-auto w-full max-w-5xl text-center">
             <p className="text-xs uppercase tracking-[0.24em] text-goldSoft">NYC Luxury Car Service</p>
             <h2 className="mt-4 text-3xl font-bold text-white md:text-4xl">

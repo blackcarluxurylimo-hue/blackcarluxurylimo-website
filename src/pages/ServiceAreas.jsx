@@ -32,7 +32,7 @@ export default function ServiceAreas() {
     <>
       <Seo {...serviceAreasSeo} />
 
-      <main className="px-4 pt-[8.5rem] pb-[2.5rem] md:px-6 md:pt-[8.5rem] md:pb-[3.5rem]">
+      <main className="px-4 pt-6 pb-10 md:px-6 md:pt-8 md:pb-14">
         <section className="reveal mx-auto w-full max-w-7xl">
           <p className="text-xs uppercase tracking-[0.24em] text-goldSoft">Where We Drive</p>
           <h1 className="mt-3 text-4xl font-bold text-white md:text-5xl">Service Areas</h1>

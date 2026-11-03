@@ -47,7 +47,7 @@ const TeslaPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-ink to-ink/95">
       <Seo {...teslaSeo} />
-      <div className="pt-[9rem] pb-16 px-4 max-w-7xl mx-auto">
+      <div className="pt-6 pb-16 px-4 max-w-7xl mx-auto md:pt-8">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 text-center">Tesla Fleet</h1>
         <p className="text-gold text-center text-sm md:text-base mb-12">Complete Luxury Electric Lineup</p>
         <div className="mb-8 flex justify-center">

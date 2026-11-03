@@ -4,7 +4,7 @@ import { hearstImages } from '../utils/assets.js';
 
 export default function NotFound() {
   return (
-    <main className="px-4 py-20 md:px-6">
+    <main className="px-4 pt-6 pb-20 md:px-6 md:pt-8">
       <Seo title="404 | Black Car Luxury Limo" description="Page not found." />
       <section className="mx-auto w-full max-w-3xl rounded-2xl border border-gold/20 bg-ink/80 p-8 text-center">
         <p className="text-xs uppercase tracking-[0.2em] text-goldSoft">404</p>

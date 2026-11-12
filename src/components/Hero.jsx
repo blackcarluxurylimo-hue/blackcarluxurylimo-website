@@ -32,7 +32,7 @@ export default function Hero() {
               the section and content overlays it. */}
           <div className="relative w-full">
             <img
-              src={assetUrl('blackcarluxuryimage2.webp')}
+              src={assetUrl('blackcarluxuryimage2.jpg')}
               alt="Premium Chauffeur Experience"
               className="block w-full h-auto brightness-110 saturate-110 lg:relative lg:inset-auto lg:h-auto lg:object-fill"
             />
